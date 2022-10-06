@@ -60,7 +60,7 @@ public class PlayerController : MonoBehaviour
 
         // Stop movement if speed is too low
         if (Input.GetAxisRaw("Horizontal") == 0f && Input.GetAxisRaw("Vertical") == 0f) {
-            rb.velocity = new Vector3(0.0f, rb.velocity.y, 0.0f);
+            rb.velocity = new Vector3(0.1f, rb.velocity.y, 0.1f);
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded) {
