@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
 
     void SetCountText() {
 
-        countText.text = "Stars: " + count.ToString();
+        countText.text = "STARS: " + count.ToString();
         if (count >= 12) {
             winTextObject.SetActive(true);
         }
@@ -70,7 +70,7 @@ public class PlayerController : MonoBehaviour
         }
 
         if (transform.position.y <= 0.5f){
-             SceneManager.LoadScene( SceneManager.GetActiveScene().name );
+             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
     }
@@ -79,6 +79,14 @@ public class PlayerController : MonoBehaviour
         if (rb.velocity.magnitude > maxSpeed) {
             rb.velocity = rb.velocity.normalized * maxSpeed;
         }
+    }
+
+    public void QuitButton(){
+        SceneManager.LoadScene("Menu");
+   }
+
+    public void RestartButton(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     private void OnTriggerEnter(Collider other) {
