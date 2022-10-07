@@ -111,6 +111,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec8c5f5b3ea7243d8a8714bf74db9535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  degreesPerSecond: 45
+  frequency: 1
+  height: 0.3
 --- !u!54 &1271162388434561049
 Rigidbody:
   m_ObjectHideFlags: 0
